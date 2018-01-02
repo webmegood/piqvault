@@ -20,8 +20,7 @@
 }
 
 
-div {
-  cursor:move;
+#window {
   width:25vw;
   height:25vw;
 	position: absolute;
@@ -45,7 +44,9 @@ div {
 
 <div id='container'><img src="images/apollo11.jpg" /></div>
 
-<div></div>
+<div id='window'></div>
+
+<script>$('#window').draggable();</script>
 
 
 </body>
