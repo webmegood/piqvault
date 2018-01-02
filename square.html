@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<style>
+#container img {
+	left: 0;
+	top: 0;
+	z-index: 1;
+	width: 100vw;
+	height: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 1;
+}
+
+
+div {
+  cursor:move;
+  width:25vw;
+  height:25vw;
+	position: absolute;
+	z-index: 2;
+  box-shadow: 0 0 0 9999px rgba(15, 15, 15, 1);	
+}
+
+
+</style>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+
+
+<div id='container'><img src="images/apollo11.jpg" /></div>
+
+<div></div>
+
+
+
+
+<script>
+$(function() {
+    $('body').on('mousedown', 'div', function() {
+        $(this).addClass('draggable').parents().on('mousemove', function(e) {
+            $('.draggable').offset({
+                top: e.pageY - $('.draggable').outerHeight() / 2,
+                left: e.pageX - $('.draggable').outerWidth() / 2
+            }).on('mouseup', function() {
+                $(this).removeClass('draggable');
+            });
+        });
+        e.preventDefault();
+    }).on('mouseup', function() {
+        $('.draggable').removeClass('draggable');
+    });
+});
+</script>
+</body>
+</html>
