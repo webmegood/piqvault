@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<style>
+
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	background-color: rgb(105,105,105);
+}
+
+#main-image {
+	z-index: 1;
+	width: 500vw;
+	height: 500vh;
+	top: -250vh;
+	position: absolute;
+	z-index: 1;
+	background-image: url(images/apollo11.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
+</style>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="main-image"></div>
+
+
+
+<script>$('#main-image').draggable();</script>
+
+
+</body>
+</html>
