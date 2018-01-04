@@ -12,7 +12,7 @@
 		</description>
 	
 
-		
+<plugin name="cordova-plugin-privacyscreen" />		
 
 
 </widget>
