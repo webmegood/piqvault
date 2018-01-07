@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<style>
+
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	background-color: rgb(15,15,15);
+}
+
+#container {
+	background-color: #FFF;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+}
+
+#container img {
+  left: 50%;
+  top: 40px;
+  margin-left: -35vw;
+  z-index: 1;
+  width: 70vw;
+  height: auto;
+  position: fixed;
+  z-index: 1;
+}
+
+.shoes1{
+   background-image:
+   url(images/shoe1.png);
+   width: 100%;
+   height:100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index:2;
+	 -webkit-animation: shoes1 20s linear infinite;
+		-moz-animation: shoes1 20s linear infinite;
+}
+
+@-webkit-keyframes shoes1 {
+    from {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    to {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+@-moz-keyframes shoes1 {
+    from {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    to {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+.shoes2{
+   background-image:url(images/shoe2.png);
+   width: 100%;
+   height:100%;
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index:3;
+	 -webkit-animation: shoes2 15s linear infinite;
+		-moz-animation: shoes2 15s linear infinite;
+
+}
+
+@-webkit-keyframes shoes2 {
+    from {background-position: 20px 20px, 0px 0px, 0px 0px;}
+    to {background-position: 100px 300px, 200px 400px, 100px 500px;}
+}
+
+@-moz-keyframes shoes2 {
+    from {background-position: 20px 20px, 0px 0px, 0px 0px;}
+    to {background-position: 100px 300px, 200px 400px, 100px 500px;}
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div id="container">
+	<img src="images/ernie.jpg" />
+</div>
+
+
+
+<div class="shoes1"></div>
+<div class="shoes2"></div>
+
+
+
+</body>
+</html>
