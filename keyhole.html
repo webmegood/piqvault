@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<style>
+
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+#container {
+	background-color: #FFF;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+}
+
+#container img {
+  left: 50%;
+  top: 40px;
+  margin-left: -35vw;
+  z-index: 1;
+  width: 70vw;
+  height: auto;
+  position: fixed;
+  z-index: 1;
+}
+
+#window img {
+	width: 360vw;
+	height: 360vw;
+	left: 50vw;
+	top: calc(50vw + 40px);
+	margin-left: -180vw;
+	margin-top: -180vw;
+	z-index: 2;
+	position: absolute;
+}
+
+
+
+
+</style>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+
+</head>
+
+<body>
+
+
+<div id="container">
+	<img src="images/ernie.jpg" />
+	<div id="window"><img src="images/keyhole.png" /></div>
+</div>
+
+
+
+
+<script>$('#window').draggable();</script>
+
+
+</body>
+</html>
