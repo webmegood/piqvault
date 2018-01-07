@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<style>
+
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+#container {
+	background-color: #FFF;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+}
+
+#container img {
+  left: 50%;
+  top: 40px;
+  margin-left: -35vw;
+  z-index: 1;
+  width: 70vw;
+  height: auto;
+  position: fixed;
+  z-index: 1;
+}
+
+#window {
+  width:50vw;
+  height:50vw;
+	left: 50vw;
+	top: 50vh;
+	margin-left: -12.5vw;
+	margin-top: -12.5vw;
+	border-radius: 50%;
+	z-index: 2;	
+	box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.94), inset 0px 0px 7vw 10vw rgba(0, 0, 0, 0.94);
+  position: absolute;
+}
+
+
+
+
+</style>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+
+</head>
+
+<body>
+
+
+<div id="container">
+	<img src="images/ernie.jpg" />
+	<div id="window"></div>
+</div>
+
+
+
+
+<script>$('#window').draggable({ containment: "#container" });</script>
+
+
+</body>
+</html>
