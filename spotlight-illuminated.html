@@ -30,17 +30,16 @@ body {
   z-index: 1;
 }
 
-#window {
-  width:50vw;
-  height:50vw;
+#window img {
+	width: 400vw;
+	height: 400vw;
 	left: 50vw;
 	top: 50vh;
-	margin-left: -12.5vw;
-	margin-top: -12.5vw;
-	border-radius: 50%;
-	z-index: 2;	
-	box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.94), inset 0px 0px 7vw 10vw rgba(0, 0, 0, 0.94);
-  position: absolute;
+	margin-left: -200vw;
+	margin-top: -200vw;
+	z-index: 2;
+	position: absolute;
+	display: block;
 }
 
 
@@ -60,13 +59,13 @@ body {
 
 <div id="container">
 	<img src="images/ernie.jpg" />
-	<div id="window"></div>
+	<div id="window"><img src="images/spotlight.png" /></div>
 </div>
 
 
 
 
-<script>$('#window').draggable({ containment: "#container" });</script>
+<script>$('#window').draggable();</script>
 
 
 </body>
