@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<style>
+
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	background-color: rgb(15,15,15);
+}
+
+#container {
+	background-color: #FFF;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+}
+
+#container img {
+  left: 50%;
+  top: 40px;
+  margin-left: -35vw;
+  z-index: 1;
+  width: 70vw;
+  height: auto;
+  position: fixed;
+  z-index: 1;
+}
+
+.warning {
+   background-image:
+   url(images/warning.png);
+   width: 100%;
+   height:100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index:2;
+	 -webkit-animation: warning 20s linear infinite;
+		-moz-animation: warning 20s linear infinite;
+}
+
+@-webkit-keyframes warning {
+    from {background-position: 0px 0px;}
+    to {background-position: 500px 1000px;}
+}
+
+@-moz-keyframes warning {
+    from {background-position: 0px 0px;}
+    to {background-position: 500px 1000px;}
+}
+
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div id="container">
+	<img src="images/ernie.jpg" />
+</div>
+
+
+
+<div class="warning"></div>
+
+
+
+</body>
+</html>
