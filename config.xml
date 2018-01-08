@@ -13,6 +13,12 @@
 	
 
 <plugin name="cordova-plugin-privacyscreen" />		
-
+<plugin name="phonegap-plugin-csdk-client-auth" spec="~1.0.0">
+        <variable name="CSDK_CLIENT_ID_IOS" value="xxxxx" />
+        <variable name="CSDK_CLIENT_ID_ANDROID" value="b679249b56904517a7da0930c1647ebc" />
+        <variable name="CSDK_CLIENT_SECRET_IOS" value="xxxxxx" />
+        <variable name="CSDK_CLIENT_SECRET_ANDROID" value="05e1586e-c908-4a57-92ea-3d0f0ac1373f" />
+</plugin>	
+<plugin name="phonegap-plugin-csdk-image-editor" />		
 
 </widget>
