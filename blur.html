@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<style>
+
+
+
+body {
+  background-color: #333;
+}
+a {
+   display: block;
+}
+img {
+  width: 100%;
+  max-width: 700px;
+  height: 100%;
+  display: block;
+}
+.container {
+    margin-top: 40px;
+    max-width: 700px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d( 40%, 30%, 0 );
+    width: 60%;
+    height: 60%;
+    z-index: 30;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/**
+ * Extras 
+ **/
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.button {
+  padding: 20px 26px;
+  background-color: #ec3b12;
+  display: block;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #ac1711;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+<div class="support-backdrop-filter"></div>
+
+<div class="container">
+  <div id="first-element" class="filter">
+    <a href="https://goo.gl/MtKrik" class="button">Button</a>
+  </div>
+  <a href="https://goo.gl/MtKrik">
+    <img id="second-element" src="images/red-riding-hood.jpg" alt="">
+  </a>
+</div>
+
+
+</body>
+</html>
