@@ -12,7 +12,6 @@
 		</description>
 	
 
-<plugin name="cordova-plugin-privacyscreen" />		
 <plugin name="phonegap-plugin-csdk-client-auth">
         <variable name="CSDK_CLIENT_ID_IOS" value="" />
         <variable name="CSDK_CLIENT_ID_ANDROID" value="b679249b56904517a7da0930c1647ebc" />
